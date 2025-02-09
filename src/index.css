@@ -1,3 +1,6 @@
+@import "tailwindcss";
+@import "pixel-retroui/dist/index.css";
+
 html,
 body,
 #root {
