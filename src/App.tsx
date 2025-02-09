@@ -3,50 +3,58 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { Vector3 } from "three";
 import TargetContext from "./utils/TargetContext";
-import Planete from "./components/Planete";
 import Soleil from "./components/Soleil";
 import * as THREE from "three";
+import { PlanetOrbit } from "./components/PlanetOrbit";
 
 function App() {
   const targetCtx = useContext(TargetContext);
 
   return (
     <Canvas>
-      <mesh position={[0, 0, -5]}>
-        <sphereGeometry args={[100]} />
-        <meshBasicMaterial color="#403734" side={THREE.BackSide} />
+      <mesh position={[1, 0, -5]}>
+        <sphereGeometry args={[101]} />
+        <meshBasicMaterial color="#403735" side={THREE.BackSide} />
       </mesh>
 
-      <ambientLight intensity={0.5} />
-      <pointLight position={[10, 10, 10]} />
+      <ambientLight intensity={1.5} />
+      <pointLight position={[11, 10, 10]} />
       <Soleil />
-      <Planete
+      <PlanetOrbit
         id={1}
-        position={new Vector3(1.5, 0.0, 0.0)}
-        color="#d1ddfa"
-        orbitRadius={1.5}
-        orbitSpeed={0.00015}
-      />
-      <Planete
-        id={2}
-        position={new Vector3(-1.5, 0, 0)}
-        color="hotpink"
-        orbitRadius={2}
-        orbitSpeed={0.0004}
-      />
-      <Planete
-        id={3}
-        position={new Vector3(-1.5, 0, 0)}
         color="green"
-        orbitRadius={3}
-        orbitSpeed={0.00025}
+        position={new Vector3(0.0, 0.0, 0.0)}
+        radius={1.5}
+        speed={0.00015}
+        dashSize={0.1}
+        gapSize={0.3}
       />
-      <Planete
-        id={4}
-        position={new Vector3(-1.5, 0, 0)}
+      <PlanetOrbit
+        id={2}
+        color="hotpink"
+        position={new Vector3(0.0, 0.0, 0.0)}
+        radius={2}
+        speed={0.0003}
+        dashSize={0.1}
+        gapSize={0.3}
+      />
+      <PlanetOrbit
+        id={3}
         color="yellow"
-        orbitRadius={5}
-        orbitSpeed={0.0002}
+        position={new Vector3(0.0, 0.0, 0.0)}
+        radius={3}
+        speed={0.0004}
+        dashSize={0.1}
+        gapSize={0.3}
+      />
+      <PlanetOrbit
+        id={4}
+        color="red"
+        position={new Vector3(0.0, 0.0, 0.0)}
+        radius={5}
+        speed={0.0002}
+        dashSize={0.1}
+        gapSize={0.3}
       />
       <OrbitControls target={targetCtx.target} maxDistance={10} />
     </Canvas>
