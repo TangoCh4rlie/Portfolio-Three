@@ -1,8 +1,9 @@
-import { Popup } from "pixel-retroui";
+
 import { useContext } from "react";
 import TargetContext from "../utils/TargetContext";
 import ModalContext from "../utils/ModalContext";
 import TitleComponent from "./TitleComponent";
+import PopUpComponent from "./PopUpComponent";
 
 export const ContentComponent = () => {
   const targetCtx = useContext(TargetContext);
@@ -15,49 +16,39 @@ export const ContentComponent = () => {
       switch (targetCtx.id) {
         case -1:
           return (
-            <Popup
-              isOpen={modalCtx.isOpen}
-              onClose={() => modalCtx.setState(false)}
-            >
-              A propos de moi :)
-            </Popup>
+            <PopUpComponent>
+              Help
+            </PopUpComponent>
           );
-
+        case 0:
+          return (
+            <PopUpComponent>
+              A propos de moi :)
+            </PopUpComponent>
+          );
         case 1:
           return (
-            <Popup
-              isOpen={modalCtx.isOpen}
-              onClose={() => modalCtx.setState(false)}
-            >
+            <PopUpComponent>
               Modal 1
-            </Popup>
+            </PopUpComponent>
           );
         case 2:
           return (
-            <Popup
-              isOpen={modalCtx.isOpen}
-              onClose={() => modalCtx.setState(false)}
-            >
+            <PopUpComponent>
               Modal 2
-            </Popup>
+            </PopUpComponent>
           );
         case 3:
           return (
-            <Popup
-              isOpen={modalCtx.isOpen}
-              onClose={() => modalCtx.setState(false)}
-            >
+            <PopUpComponent>
               Modal 3
-            </Popup>
+            </PopUpComponent>
           );
         case 4:
           return (
-            <Popup
-              isOpen={modalCtx.isOpen}
-              onClose={() => modalCtx.setState(false)}
-            >
+            <PopUpComponent>
               Modal 4
-            </Popup>
+            </PopUpComponent>
           );
 
         default:

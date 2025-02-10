@@ -7,7 +7,8 @@ import Soleil from "./components/Soleil";
 import * as THREE from "three";
 import { PlanetOrbit } from "./components/PlanetOrbit";
 import SetInitialCameraPosition from "./components/CameraInit";
-import { ContentComponent } from "./components/ContentComponent";
+import { ContentComponent } from "./components/ContentWrapper";
+import HelpComponent from "./components/HelpComponent";
 
 function App() {
   const targetCtx = useContext(TargetContext);
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="relative h-screen">
       <ContentComponent />
+      <HelpComponent />
       <Canvas className="relative z-1 h-screen">
         <SetInitialCameraPosition />
         <mesh position={[1, 0, -5]}>

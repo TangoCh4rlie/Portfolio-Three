@@ -8,7 +8,7 @@ export default function Soleil() {
   const modalCtx = useContext(ModalContext);
 
   const handleClick = () => {
-    targetCtx.setId(-1);
+    targetCtx.setId(0);
     targetCtx.setPosition(new Vector3(0, 0, 0));
     modalCtx.setState(true);
   };
