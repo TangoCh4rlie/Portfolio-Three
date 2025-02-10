@@ -1,8 +1,21 @@
 .modal-max-width {
   padding: 1% 1%;
+  width: 80vw;
+
   max-height: 70vh;
-  max-width: 95vh;
+  /* max-width: 95vh; */
   overflow-y: auto;
   overflow-x: hidden;
   box-sizing: border-box;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.modal-max-width::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.modal-max-width {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

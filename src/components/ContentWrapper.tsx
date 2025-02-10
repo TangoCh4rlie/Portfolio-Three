@@ -4,6 +4,7 @@ import ModalContext from "../utils/ModalContext";
 import TitleComponent from "./TitleComponent";
 import PopUpComponent from "./PopUpComponent";
 import { MeComponent } from "./MeComponent";
+import { TechnoComponent } from "./TechnoComponent";
 
 export const ContentComponent = () => {
   const targetCtx = useContext(TargetContext);
@@ -23,7 +24,11 @@ export const ContentComponent = () => {
             </PopUpComponent>
           );
         case 1:
-          return <PopUpComponent>Modal 1</PopUpComponent>;
+          return (
+            <PopUpComponent>
+              <TechnoComponent />
+            </PopUpComponent>
+          );
         case 2:
           return <PopUpComponent>Modal 2</PopUpComponent>;
         case 3:

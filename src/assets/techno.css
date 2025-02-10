@@ -1,0 +1,17 @@
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 2px;
+  width: full; /* Largeur fixe du conteneur */
+  overflow-x: auto; /* Permet le défilement horizontal */
+}
+
+.language-square {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
