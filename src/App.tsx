@@ -61,7 +61,11 @@ function App() {
           dashSize={0.1}
           gapSize={0.3}
         />
-        <OrbitControls target={targetCtx.target} maxDistance={10} />
+        <OrbitControls
+          target={targetCtx.target}
+          maxDistance={10}
+          minDistance={2}
+        />
       </Canvas>
     </div>
   );

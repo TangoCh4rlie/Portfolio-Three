@@ -2,6 +2,7 @@ import { useFrame, Vector3 } from "@react-three/fiber";
 import { useRef, useContext } from "react";
 import TargetContext from "../utils/TargetContext";
 import * as THREE from "three";
+import ModalContext from "../utils/ModalContext";
 
 interface PlaneteProps {
   id: number;
@@ -20,6 +21,7 @@ export default function Planete({
 }: PlaneteProps) {
   const meshRef = useRef<THREE.Mesh>(null);
   const targetCtx = useContext(TargetContext);
+  const modalCtx = useContext(ModalContext);
 
   useFrame(() => {
     if (meshRef.current) {
@@ -27,14 +29,17 @@ export default function Planete({
       meshRef.current.position.x = Math.cos(time) * orbitRadius;
       meshRef.current.position.z = Math.sin(time) * orbitRadius;
       if (targetCtx.id === id) {
-        targetCtx.setPosition(meshRef.current?.position.clone(), id);
+        targetCtx.setPosition(meshRef.current?.position.clone());
       }
     }
   });
 
   const handleClick = () => {
+    console.log(id);
+
     if (meshRef.current) {
-      targetCtx.setPosition(meshRef.current?.position.clone(), id);
+      targetCtx.setId(id);
+      modalCtx.setState(true);
     }
   };
 
