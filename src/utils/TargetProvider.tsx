@@ -1,14 +1,14 @@
-import { useReducer } from "react";
+import { PropsWithChildren, useReducer } from "react";
 import { Vector3 } from "three";
 import TargetContext from "./TargetContext";
 
-interface Target {
+interface TargetAction {
   type: string;
   newPosition?: Vector3;
   id?: number;
 }
 
-const TargetReducer = (state, action: Target) => {
+const TargetReducer = (state: any, action: TargetAction) => {
   if (action.type === "P") {
     return {
       ...state,
@@ -29,7 +29,7 @@ const defaultTarget = {
   target: new Vector3(0, 0, 0),
 };
 
-const TargetProvider = (props) => {
+const TargetProvider = (props: PropsWithChildren) => {
   const [position, dispatch] = useReducer(TargetReducer, defaultTarget);
 
   const setPosition = (newPosition: Vector3) => {

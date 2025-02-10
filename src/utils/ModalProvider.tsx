@@ -1,11 +1,11 @@
-import { useReducer } from "react";
+import { PropsWithChildren, useReducer } from "react";
 import ModalContext from "./ModalContext";
 
 interface Modal {
   isOpen: boolean;
 }
 
-const ModalReducer = (state, action: Modal) => {
+const ModalReducer = (_state: any, action: Modal) => {
   return {
     isOpen: action.isOpen,
   };
@@ -15,7 +15,7 @@ const defaultModal = {
   isOpen: false,
 };
 
-const ModalProvider = (props) => {
+const ModalProvider = (props: PropsWithChildren) => {
   const [position, dispatch] = useReducer(ModalReducer, defaultModal);
 
   const setState = (isOpen: boolean) => {
