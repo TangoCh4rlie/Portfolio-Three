@@ -9,7 +9,7 @@ export const PlanetOrbit = (props: {
   speed: number;
   dashSize: number;
   gapSize: number;
-  color: string;
+  name: string;
 }) => {
   const createOrbitPath = (radius: number) => {
     const points = [];
@@ -36,7 +36,7 @@ export const PlanetOrbit = (props: {
       <Planete
         id={props.id}
         position={props.position}
-        color={props.color}
+        name={props.name}
         orbitRadius={props.radius}
         orbitSpeed={props.speed}
       />

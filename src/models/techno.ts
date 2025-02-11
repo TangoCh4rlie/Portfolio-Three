@@ -4,6 +4,5 @@ export interface Techno {
   img: {
     fill?: string;
     d?: string;
-    path?: string;
   };
 }

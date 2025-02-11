@@ -3,15 +3,14 @@
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   gap: 2px;
   width: full; /* Largeur fixe du conteneur */
-  overflow-x: auto; /* Permet le défilement horizontal */
 }
 
 .language-square {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   display: flex;
   flex-direction: column;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   align-items: center;
   justify-content: center;
 }

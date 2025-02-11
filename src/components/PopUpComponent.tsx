@@ -11,7 +11,7 @@ export default function PopUpComponent(props: PropsWithChildren) {
       onClose={() => modalCtx.setState(false)}
       baseBg="#256bdb"
       bg="#f5f0a9"
-      className="opacity-80"
+      className="opacity-85"
     >
       {props.children}
     </Popup>
