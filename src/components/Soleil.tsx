@@ -1,9 +1,17 @@
-import { useContext } from "react";
+import { Suspense, useContext } from "react";
 import TargetContext from "../utils/TargetContext";
 import { Vector3 } from "three";
 import ModalContext from "../utils/ModalContext";
+import * as THREE from "three";
+import Astre from "./Astre";
 
-export default function Soleil() {
+interface SunProps {
+  obj: THREE.Group;
+  size: number;
+  rotateSpeed: number;
+}
+
+export default function Soleil(props: SunProps) {
   const targetCtx = useContext(TargetContext);
   const modalCtx = useContext(ModalContext);
 
@@ -14,9 +22,14 @@ export default function Soleil() {
   };
 
   return (
-    <mesh onClick={handleClick}>
-      <sphereGeometry args={[1, 32, 32]} />
-      <meshBasicMaterial color="yellow" />
-    </mesh>
+    <Suspense fallback={null}>
+      <mesh position={new Vector3(0, 0, 0)} onClick={handleClick}>
+        <Astre
+          obj={props.obj}
+          size={props.size}
+          rotateSpeed={props.rotateSpeed}
+        />
+      </mesh>
+    </Suspense>
   );
 }

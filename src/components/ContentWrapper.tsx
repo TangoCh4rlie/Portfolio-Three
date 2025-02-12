@@ -12,8 +12,6 @@ export const ContentComponent = () => {
 
   const renderSwitchModal = () => {
     if (modalCtx.isOpen) {
-      console.log(targetCtx.id);
-
       switch (targetCtx.id) {
         case -1:
           return <PopUpComponent>Help</PopUpComponent>;

@@ -1,20 +1,24 @@
 import { Line } from "@react-three/drei";
 import { Vector3 } from "three";
-import Planete from "./Planete";
+import Planet from "./Planet";
+import * as THREE from "three";
 
-export const PlanetOrbit = (props: {
+interface PlaneteOrbitProps {
   id: number;
-  position: Vector3;
-  radius: number;
-  speed: number;
+  orbitRadius: number;
+  orbitSpeed: number;
+  obj: THREE.Group;
+  rotateSpeed: number;
+  size: number;
   dashSize: number;
   gapSize: number;
-  name: string;
-}) => {
+}
+
+export const PlanetOrbit = (props: PlaneteOrbitProps) => {
   const createOrbitPath = (radius: number) => {
     const points = [];
-    for (let i = 0; i < 64; i++) {
-      const angle = (i / 64) * Math.PI * 2;
+    for (let i = 0; i < 100; i++) {
+      const angle = (i / 100) * Math.PI * 2;
       points.push(
         new Vector3(Math.cos(angle) * radius, 0, Math.sin(angle) * radius),
       );
@@ -25,20 +29,21 @@ export const PlanetOrbit = (props: {
   return (
     <>
       <Line
-        points={createOrbitPath(props.radius)}
-        color="#d2ddfa"
+        points={createOrbitPath(props.orbitRadius)}
+        color="#6d6d6d"
         lineWidth={1}
         dashed={true}
         dashSize={props.dashSize}
         gapSize={props.gapSize}
       />
 
-      <Planete
+      <Planet
         id={props.id}
-        position={props.position}
-        name={props.name}
-        orbitRadius={props.radius}
-        orbitSpeed={props.speed}
+        orbitRadius={props.orbitRadius}
+        orbitSpeed={props.orbitSpeed}
+        obj={props.obj}
+        rotateSpeed={props.rotateSpeed}
+        size={props.size}
       />
     </>
   );

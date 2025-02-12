@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Mercury",
+    "objPath": "/planet/Mercury.obj",
+    "mtlPath": "/planet/Mercury.mtl",
+    "orbitRadius": 7,
+    "speed": 0.0002,
+    "dashSize": 0.1,
+    "gapSize": 2,
+    "size": 0.1,
+    "rotateSpeed": 0.08
+  },
+  {
+    "id": 2,
+    "name": "Venus",
+    "objPath": "/planet/Venus.obj",
+    "mtlPath": "/planet/Venus.mtl",
+    "orbitRadius": 14,
+    "speed": 0.0001,
+    "dashSize": 0.1,
+    "gapSize": 2,
+    "size": 0.1,
+    "rotateSpeed": 0.12
+  },
+  {
+    "id": 3,
+    "name": "Earth",
+    "objPath": "/planet/Earth.obj",
+    "mtlPath": "/planet/Earth.mtl",
+    "orbitRadius": 20,
+    "speed": 0.00015,
+    "dashSize": 0.1,
+    "gapSize": 2,
+    "size": 0.1,
+    "rotateSpeed": 0.11
+  },
+  {
+    "id": 4,
+    "name": "Mars",
+    "objPath": "/planet/Mars.obj",
+    "mtlPath": "/planet/Mars.mtl",
+    "orbitRadius": 28,
+    "speed": 0.00012,
+    "dashSize": 0.1,
+    "gapSize": 2,
+    "size": 0.1,
+    "rotateSpeed": 0.1
+  },
+  {
+    "id": 5,
+    "name": "Jupiter",
+    "objPath": "/planet/Jupiter.obj",
+    "mtlPath": "/planet/Jupiter.mtl",
+    "orbitRadius": 38,
+    "speed": 0.00009,
+    "dashSize": 0.1,
+    "gapSize": 2,
+    "size": 0.1,
+    "rotateSpeed": 0.09
+  },
+  {
+    "id": 6,
+    "name": "Saturn",
+    "objPath": "/planet/Saturn.obj",
+    "mtlPath": "/planet/Saturn.mtl",
+    "orbitRadius": 50,
+    "speed": 0.00012,
+    "dashSize": 0.1,
+    "gapSize": 2,
+    "size": 0.1,
+    "rotateSpeed": 0.1
+  },
+  {
+    "id": 7,
+    "name": "Uranus",
+    "objPath": "/planet/Uranus.obj",
+    "mtlPath": "/planet/Uranus.mtl",
+    "orbitRadius": 58,
+    "speed": 0.00005,
+    "dashSize": 0.1,
+    "gapSize": 2,
+    "size": 0.1,
+    "rotateSpeed": 0.11
+  },
+  {
+    "id": 8,
+    "name": "Neptune",
+    "objPath": "/planet/Neptune.obj",
+    "mtlPath": "/planet/Neptune.mtl",
+    "orbitRadius": 68,
+    "speed": 0.00014,
+    "dashSize": 0.1,
+    "gapSize": 2,
+    "size": 0.1,
+    "rotateSpeed": 0.12
+  },
+  {
+    "id": 0,
+    "name": "Sun",
+    "objPath": "/planet/Sun.obj",
+    "mtlPath": "/planet/Sun.mtl",
+    "orbitRadius": 76,
+    "speed": 0,
+    "dashSize": 0,
+    "gapSize": 0,
+    "size": 0.2,
+    "rotateSpeed": 0.1
+  }
+]
