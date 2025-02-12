@@ -27,12 +27,12 @@ function App() {
         {/* Ambient Light (Soft background lighting) */}
         <ambientLight intensity={0.6} />
         {/* Directional Light (Acts like sunlight) */}
-        <directionalLight position={[5, 5, 5]} intensity={2} castShadow />
+        <directionalLight position={[5, 5, 5]} intensity={3} castShadow />
         {/* Point Light (Acts like a small light source) */}
-        <pointLight position={[0, 5, 0]} intensity={5} />
+        <pointLight position={[0, 5, 0]} intensity={7} />
 
         <ObjectLoader />
-        <OrbitControls target={targetCtx.target} minDistance={2} />
+        <OrbitControls target={targetCtx.target} minDistance={6} />
       </Canvas>
     </div>
   );

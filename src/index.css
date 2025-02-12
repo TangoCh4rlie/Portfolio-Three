@@ -7,10 +7,5 @@ body,
   height: 100%;
   margin: unset;
   background: #090b1f;
-  background: radial-gradient(
-    at 50% 70%,
-    #200f20 40%,
-    #090b1f 80%,
-    #050523 100%
-  );
+  background: radial-gradient(at 50% 70%, #110a00 50%, #050523 100%);
 }

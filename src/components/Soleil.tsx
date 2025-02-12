@@ -23,7 +23,7 @@ export default function Soleil(props: SunProps) {
 
   return (
     <Suspense fallback={null}>
-      <mesh position={new Vector3(0, 0, 0)} onClick={handleClick}>
+      <mesh position={new Vector3(0, -3.6, 0)} onClick={handleClick}>
         <Astre
           obj={props.obj}
           size={props.size}

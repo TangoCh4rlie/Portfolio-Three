@@ -21,9 +21,15 @@ export default function Planet(props: PlaneteProps) {
 
   useFrame(() => {
     if (meshRef.current) {
-      const time = Date.now() * props.orbitSpeed!;
-      meshRef.current.position.x = Math.cos(time) * props.orbitRadius!;
-      meshRef.current.position.z = Math.sin(time) * props.orbitRadius!;
+      const time = Date.now() * props.orbitSpeed;
+      // meshRef.current.position.x = Math.cos(time) * props.orbitRadius;
+      // meshRef.current.position.z = Math.sin(time) * props.orbitRadius;
+
+      const x = Math.cos(time) * props.orbitRadius!;
+      const z = Math.sin(time) * props.orbitRadius!;
+
+      meshRef.current.position.set(x, -1.8, z);
+
       if (targetCtx.id === props.id) {
         targetCtx.setPosition(meshRef.current?.position.clone());
       }
