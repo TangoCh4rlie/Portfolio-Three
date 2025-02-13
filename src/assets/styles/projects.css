@@ -1,0 +1,42 @@
+/* Styles par défaut pour les écrans inférieurs à 500px */
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card img {
+  height: 15rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  opacity: 100%;
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  margin-bottom: 1rem;
+}
+
+/* Styles pour les écrans supérieurs à 500px */
+@media (min-width: 1000px) {
+  .project-card {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .project-card h3,
+  .project-card p {
+    margin-left: 1rem;
+  }
+
+  .project-card .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

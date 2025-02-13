@@ -1,5 +1,5 @@
-import "../assets/modal.css";
-import "../assets/techno.css";
+import "../assets/styles/modal.css";
+import "../assets/styles/techno.css";
 import {
   Accordion,
   AccordionItem,

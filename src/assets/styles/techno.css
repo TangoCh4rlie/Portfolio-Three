@@ -1,13 +1,14 @@
 .language-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 2px;
+  gap: 2vh;
+  justify-items: center; /* Centre le contenu des colonnes */
   width: full; /* Largeur fixe du conteneur */
 }
 
 .language-square {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   font-size: 0.75rem;

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../assets/title.css";
+import "../assets/styles/title.css";
 
 export default function TitleComponent() {
   const [isVisible, setIsVisible] = useState(true);

@@ -11,16 +11,18 @@ export const MeComponent = () => {
         à l'IUT Claude Bernard de Lyon 1.
         <br />
         <br />
-        Très <span className="text-blue-700">curieux et polyvalent</span>, je
-        suis toujours à la recherche de nouveaux projets à réaliser. N'ayant pas
-        de langage favori à proprement parlé, j'adore m'essayer à de nouvelles
-        techno pour <span className="text-blue-700">découvrir</span> de
-        nouvelles choses. J'ai d'ailleurs utilisé pour l'occasion de ce
-        portfolio la librairie Three.js pour la première fois.
+        Très <span className="text-blue-700">curieux, polyvalent</span> et
+        passionné d'
+        <span className="text-blue-700">open source</span>, je suis toujours à
+        la recherche de nouveaux projets à réaliser. N'ayant pas de langage
+        favori à proprement parlé, j'adore m'essayer à de nouvelles techno pour{" "}
+        <span className="text-blue-700">découvrir</span> de nouvelles technos.
+        J'ai d'ailleurs utilisé pour l'occasion de ce portfolio la librairie
+        Three.js pour la première fois.
         <br />
         <br />
-        Je ne suis pas frileux à l'idée de{" "}
-        <span className="text-red-800">travailler en équipe </span>, bien au
+        Je ne suis pas frileux à l'idée de
+        <span className="text-red-800"> travailler en équipe </span>, bien au
         contraire, j'adore ça.
         <br />
         <br />

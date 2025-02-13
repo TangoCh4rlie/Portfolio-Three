@@ -1,0 +1,101 @@
+[
+  {
+    "title": "Portfolio",
+    "description": "J'ai réalisé ce portfolio avec un framework que je ne connaissais pas pour découvrir de nouvelles choses. J'ai utilisé Nuxt ainsi que sa librairie de composant NuxtUI avec Tailwindcss pour le style graphique.",
+    "img": {
+      "path": "/img/portfolio.webp"
+    },
+    "link": "https://portfolio-elouan-reymond.vercel.app",
+    "repo": "https://github.com/TangoCh4rlie/PortfolioNuxt",
+    "tech": ["Vue", "NuxtJs", "TypeScript", "Tailwindcss"],
+    "tags": ["Perso", "Ecole"],
+    "date": "2024"
+  },
+  {
+    "title": "Serrata",
+    "description": "Un projet de jeu de tappage de drapeaux réalisé entre amis. J'ai réalisé dans un premier temps le back avec FastAPI puis voyant que j'étais limité en fonctionnalités, je l'ai refait en Express.",
+    "img": {
+      "path": "/img/serrata.webp"
+    },
+    "link": "https://serrata.super-sympa.fr",
+    "repo": "https://github.com/serrataapp",
+    "tech": [
+      "TypeScript",
+      "Express",
+      "FastAPI",
+      "PostgreSQL",
+      "React",
+      "Docker",
+      "Kubernetes"
+    ],
+    "tags": ["Jeux", "Equipe"],
+    "date": "2023"
+  },
+  {
+    "title": "Nuit de l'info",
+    "description": "Projet collaboratif réalisé en une douzaine d'heures lors de la nuit de l'info 2024 sur le thème de l'information climatique.",
+    "img": {
+      "path": "/img/logo_super_sympa.webp"
+    },
+    "repo": "https://github.com/EQUIPE-SUPER-SYMPA-Nuit-de-l-info/FrontNDL",
+    "tech": ["JavaScript", "Svelte", "Kubernetes"],
+    "tags": ["Equipe", "Evenement"],
+    "date": "2024"
+  },
+
+  {
+    "title": "Projet SAE Peninsule",
+    "description": "Projet réalisé à l'occasion de la réalisation d'un projet de groupe à l'IUT permettant mener un projet de A à Z.",
+    "img": {
+      "path": "/img/projects/peninsule.png"
+    },
+    "tech": ["JavaScript", "Svelte", "SqLite", "Vercel"],
+    "tags": ["Conduire", "Réaliser", "Collaborer"],
+    "date": "2024",
+    "competence": true
+  },
+  {
+    "title": "Projet SAE Annuaire",
+    "description": "Réalisation d'un programme en C permettant la gestion d'un annuaire à partir d'un fichier CSV contenant des contacts.",
+    "img": {
+      "path": "/img/projects/annuaire.jpg"
+    },
+    "tech": ["C"],
+    "tags": ["Réaliser", "Optimiser", "Administrer", "Gérer", "Collaborer"],
+    "date": "2022",
+    "competence": true
+  },
+  {
+    "title": "Projet SAE Parcours de graphe",
+    "description": "Ce projet mêlait maths et Java, le but était de faire une application permettant de visualiser et de parcourir un graphe.",
+    "img": {
+      "path": "/img/projects/graph.jpg"
+    },
+    "tech": ["Java"],
+    "tags": ["Optimiser", "Réaliser", "Collaborer"],
+    "date": "2023",
+    "competence": true
+  },
+  {
+    "title": "Projet SAE Kebab",
+    "description": "Application réalisé en équipe d'un site web static en HTML CSS pour le S1.",
+    "img": {
+      "path": "/img/projects/kebab_croped.png"
+    },
+    "tech": ["Htlm", "Css", "JavaScript"],
+    "tags": ["Optimiser", "Réaliser", "Collaborer"],
+    "date": "2022",
+    "competence": true
+  },
+  {
+    "title": "SupersymPanier",
+    "description": "Projet PHP permettant de faire des listes de courses en ligne.",
+    "img": {
+      "path": "/img/projects/panier.png"
+    },
+    "tech": ["Php", "Symfony", "Docker"],
+    "tags": ["Optimiser", "Réaliser", "Collaborer"],
+    "date": "2022",
+    "competence": true
+  }
+]

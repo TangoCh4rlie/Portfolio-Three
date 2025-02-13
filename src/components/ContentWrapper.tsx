@@ -6,6 +6,7 @@ import PopUpComponent from "./PopUpComponent";
 import { MeComponent } from "./MeComponent";
 import { TechnoComponent } from "./TechnoComponent";
 import { HelpComponent } from "./HelpComponent";
+import { ProjectsComponent } from "./ProjectsComponent";
 
 export const ContentComponent = () => {
   const targetCtx = useContext(TargetContext);
@@ -33,7 +34,11 @@ export const ContentComponent = () => {
             </PopUpComponent>
           );
         case 2:
-          return <PopUpComponent>Modal 2</PopUpComponent>;
+          return (
+            <PopUpComponent>
+              <ProjectsComponent />
+            </PopUpComponent>
+          );
         case 3:
           return <PopUpComponent>Modal 3</PopUpComponent>;
         case 4:

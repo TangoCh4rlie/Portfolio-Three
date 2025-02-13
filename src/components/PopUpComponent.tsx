@@ -1,7 +1,7 @@
 import { PropsWithChildren, useContext, useEffect } from "react";
 import ModalContext from "../utils/ModalContext";
 import { Popup } from "pixel-retroui";
-import "../assets/modal.css";
+import "../assets/styles/modal.css";
 
 export default function PopUpComponent(props: PropsWithChildren) {
   const modalCtx = useContext(ModalContext);
