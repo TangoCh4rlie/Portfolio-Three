@@ -5,7 +5,7 @@ import { useLoader } from "@react-three/fiber";
 import { MTLLoader, OBJLoader } from "three-stdlib";
 import * as THREE from "three";
 import { PlanetOrbit } from "./PlanetOrbit";
-import Soleil from "./Soleil";
+import Sun from "./Sun";
 
 export const ObjectLoader = () => {
   const planets: PlanetJson[] = planetJson;
@@ -79,7 +79,7 @@ export const ObjectLoader = () => {
       {/* <Soleil /> */}
       <Suspense fallback={null}>
         {mapTexture.get(sunDefinition.name) && (
-          <Soleil
+          <Sun
             obj={mapTexture.get(sunDefinition.name)!}
             size={sunDefinition.size}
             rotateSpeed={sunDefinition.rotateSpeed}

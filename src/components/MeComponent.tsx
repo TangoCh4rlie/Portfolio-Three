@@ -1,8 +1,6 @@
-import "../assets/modal.css";
-
 export const MeComponent = () => {
   return (
-    <div className="modal-max-width">
+    <>
       <h2 className="text-2xl mb-4">A props de moi</h2>
       <p>
         Salut, moi c'est Elouan
@@ -32,6 +30,6 @@ export const MeComponent = () => {
         Voici donc mon portfolio que j'ai réalisé avec beaucoup de plaisir,
         j'espère qu'il vous plaira !
       </p>
-    </div>
+    </>
   );
 };

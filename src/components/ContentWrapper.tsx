@@ -5,6 +5,7 @@ import TitleComponent from "./TitleComponent";
 import PopUpComponent from "./PopUpComponent";
 import { MeComponent } from "./MeComponent";
 import { TechnoComponent } from "./TechnoComponent";
+import { HelpComponent } from "./HelpComponent";
 
 export const ContentComponent = () => {
   const targetCtx = useContext(TargetContext);
@@ -14,7 +15,11 @@ export const ContentComponent = () => {
     if (modalCtx.isOpen) {
       switch (targetCtx.id) {
         case -1:
-          return <PopUpComponent>Help</PopUpComponent>;
+          return (
+            <PopUpComponent>
+              <HelpComponent />
+            </PopUpComponent>
+          );
         case 0:
           return (
             <PopUpComponent>

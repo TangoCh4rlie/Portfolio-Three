@@ -1,20 +1,30 @@
-import { Button } from "pixel-retroui";
-import { useContext } from "react";
-import ModalContext from "../utils/ModalContext";
-import TargetContext from "../utils/TargetContext";
-
-export default function HelpComponent() {
-    const targetCtx = useContext(TargetContext);
-  const modalCtx = useContext(ModalContext);
-
-    const handleClick = () => {
-        targetCtx.setId(-1);
-        modalCtx.setState(true);
-    }
-    
-    return (
-        <Button bg="#f5f0a9" shadow="#256bdb" className="fixed bottom-3 right-3 z-5 py-1 px-2 text-2xl" onClick={handleClick}>
-            ?
-        </Button>
-    );
-}
+export const HelpComponent = () => {
+  return (
+    <div>
+      <h3 className="text-2xl mb-4">Help !</h3>
+      <div className="flex flex-col gap-2">
+        <p className="mb-4">
+          Naviguez à travers le système en cliquant sur chaque planetes pour en
+          savoir plus à propos de moi.
+        </p>
+        <p>
+          Pressez <span className="text-blue-500">[espace]</span> pour recentrer
+          la caméra sur le soleil.
+        </p>
+        <p>
+          Utilisez la <span className="text-blue-500">[molette]</span> de la
+          souris pour recentrer zoomer ou dézoomer.
+        </p>
+        <p>
+          Maintenez le <span className="text-blue-500">[click gauche]</span> de
+          la souris pour vous déplacer dans l'espace
+        </p>
+        <p className="mb-4">
+          Pressez <span className="text-blue-500">[echap]</span> pour sortir
+          rapidement d'une pop-up.
+        </p>
+        <p className="text-purple-700">Enjoy :)</p>
+      </div>
+    </div>
+  );
+};

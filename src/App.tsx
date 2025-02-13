@@ -4,9 +4,9 @@ import { OrbitControls } from "@react-three/drei";
 import TargetContext from "./utils/TargetContext";
 import SetInitialCameraPosition from "./components/CameraInit";
 import { ContentComponent } from "./components/ContentWrapper";
-import HelpComponent from "./components/HelpComponent";
 import { ObjectLoader } from "./components/ObjectLoader";
 import Stars from "./components/Stars";
+import HelpButton from "./components/HelpButton";
 
 function App() {
   const targetCtx = useContext(TargetContext);
@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="relative h-screen">
       <ContentComponent />
-      <HelpComponent />
+      <HelpButton />
       <Canvas className="relative z-1 h-screen">
         <SetInitialCameraPosition />
 
