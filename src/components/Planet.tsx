@@ -1,4 +1,4 @@
-import { useFrame } from "@react-three/fiber";
+import { ThreeEvent, useFrame } from "@react-three/fiber";
 import { useRef, useContext, Suspense } from "react";
 import TargetContext from "../utils/TargetContext";
 import * as THREE from "three";
@@ -36,7 +36,9 @@ export default function Planet(props: PlaneteProps) {
     }
   });
 
-  const handleClick = () => {
+  const handleClick = (event: ThreeEvent<MouseEvent>) => {
+    event.stopPropagation();
+    event.nativeEvent.preventDefault();
     if (meshRef.current) {
       targetCtx.setId(props.id);
       modalCtx.setState(true);
@@ -45,7 +47,7 @@ export default function Planet(props: PlaneteProps) {
 
   return (
     <Suspense fallback={null}>
-      <mesh ref={meshRef} onClick={handleClick}>
+      <mesh ref={meshRef} onClick={(event) => handleClick(event)}>
         <Astre
           obj={props.obj}
           rotateSpeed={props.rotateSpeed}
