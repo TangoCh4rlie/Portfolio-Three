@@ -5,9 +5,9 @@ export const MeComponent = () => {
       <p>
         Salut, moi c'est Elouan
         <br /> <br />
-        Passionné d'informatique et actuellement{" "}
-        <span className="text-fuchsia-800">alternant chez Axopen</span>, je suis
-        en <span className="text-fuchsia-800">troisième année </span>
+        Passionné d'informatique et actuellement
+        <span className="text-fuchsia-800"> alternant chez Axopen</span>, je
+        suis en <span className="text-fuchsia-800">troisième année </span>
         à l'IUT Claude Bernard de Lyon 1.
         <br />
         <br />
