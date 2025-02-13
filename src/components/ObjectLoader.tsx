@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import planetJson from "../../public/json/planet.json";
+import planetJson from "../assets/json/planet.json";
 import { PlanetJson } from "../models/planet";
 import { useLoader } from "@react-three/fiber";
 import { MTLLoader, OBJLoader } from "three-stdlib";

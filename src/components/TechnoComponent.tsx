@@ -7,7 +7,7 @@ import {
   AccordionContent,
   Card,
 } from "pixel-retroui";
-import technoJson from "../../public/json/techno.json";
+import technoJson from "../assets/json/techno.json";
 import { Techno } from "../models/techno";
 
 interface LanguageSquareProps {

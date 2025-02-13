@@ -4,6 +4,7 @@ import { Vector3 } from "three";
 import ModalContext from "../utils/ModalContext";
 import * as THREE from "three";
 import Astre from "./Astre";
+import { ThreeEvent } from "@react-three/fiber";
 
 interface SunProps {
   obj: THREE.Group;
@@ -31,7 +32,9 @@ export default function Sun(props: SunProps) {
     };
   }, [targetCtx, modalCtx]);
 
-  const handleClick = () => {
+  const handleClick = (event: ThreeEvent<MouseEvent>) => {
+    event.stopPropagation();
+    event.nativeEvent.preventDefault();
     targetCtx.setId(0);
     targetCtx.setPosition(new Vector3(0, 0, 0));
     modalCtx.setState(true);

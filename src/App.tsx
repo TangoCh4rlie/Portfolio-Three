@@ -7,33 +7,42 @@ import { ContentComponent } from "./components/ContentWrapper";
 import { ObjectLoader } from "./components/ObjectLoader";
 import Stars from "./components/Stars";
 import HelpButton from "./components/HelpButton";
+import * as THREE from "three";
 
 function App() {
   const targetCtx = useContext(TargetContext);
 
-  // TODO: finir les secitons par Planetes
+  // todo: finir les secitons par Planetes
   // TODO: faire un gros zoom quand on arrive sur la fenetre
   // TODO: effet de zoom plus trasition de cam quand planete cliqué
+  // TODO: faire le site en anglais
+  // TODO: changer les keybind en fonction de l'appareil
+  //
 
   return (
     <div className="relative h-screen">
-      <ContentComponent />
-      <HelpButton />
-      <Canvas className="relative z-1 h-screen">
-        <SetInitialCameraPosition />
+      <>
+        <ContentComponent />
+        <HelpButton />
+        <Canvas
+          className="relative z-1 h-screen"
+          gl={{
+            toneMapping: THREE.ACESFilmicToneMapping,
+          }}
+        >
+          <SetInitialCameraPosition />
 
-        <Stars />
+          <Stars />
 
-        {/* Ambient Light (Soft background lighting) */}
-        <ambientLight intensity={0.6} />
-        {/* Directional Light (Acts like sunlight) */}
-        <directionalLight position={[5, 5, 5]} intensity={3} castShadow />
-        {/* Point Light (Acts like a small light source) */}
-        <pointLight position={[0, 5, 0]} intensity={7} />
+          <ambientLight intensity={1} />
+          <hemisphereLight groundColor={"#444444"} intensity={0.8} />
+          <directionalLight position={[5, 5, 5]} intensity={4} castShadow />
+          <pointLight position={[0, 10, 0]} intensity={10} color={"#ffffff"} />
 
-        <ObjectLoader />
-        <OrbitControls target={targetCtx.target} minDistance={6} />
-      </Canvas>
+          <ObjectLoader />
+          <OrbitControls target={targetCtx.target} minDistance={6} />
+        </Canvas>
+      </>
     </div>
   );
 }

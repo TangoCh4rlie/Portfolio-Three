@@ -17,7 +17,7 @@ export default function Astre(props: AstreProps) {
       if (child instanceof THREE.Mesh) {
         child.material = new THREE.MeshStandardMaterial({
           map: child.material.map,
-          metalness: 0.6,
+          metalness: 0.8,
           roughness: 0.3,
         });
       }
