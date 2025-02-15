@@ -17,7 +17,16 @@ function App() {
   // TODO: effet de zoom plus trasition de cam quand planete cliqué
   // TODO: faire le site en anglais
   // TODO: changer les keybind en fonction de l'appareil
-  //
+
+  // TODO: 0 = moi
+  // TODO: 1 = techno
+  // TODO: 2 = projets
+  // TODO: 3 = expérience pro
+  // TODO: 4 = auto-entreprenariat
+  // TODO: 5 = autres projets
+  // TODO: 6 = blog
+  // TODO: 7 = contact
+  // TODO: 8 = a venir
 
   return (
     <div className="relative h-screen">

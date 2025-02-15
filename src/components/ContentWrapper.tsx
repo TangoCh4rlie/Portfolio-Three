@@ -43,6 +43,8 @@ export const ContentComponent = () => {
           return <PopUpComponent>Modal 3</PopUpComponent>;
         case 4:
           return <PopUpComponent>Modal 4</PopUpComponent>;
+        case 7:
+          return <PopUpComponent><ContentComponent /></PopUpComponent>;
 
         default:
           return null;
