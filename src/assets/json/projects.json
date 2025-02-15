@@ -1,13 +1,44 @@
 [
   {
-    "title": "Portfolio",
+    "title": "Portfolio v2",
+    "description": "Evolution de mon portfolio avec les librairies react et three.js. Fortement inspiré de l'esprit d'Outer Wild pour le choix des assets et de l'ambiance. J'espère qu'il vous plait :)",
+    "img": {
+      "path": "/img/portfolio.webp"
+    },
+    "link": "https://portfolio.elouanreymond.com",
+    "repo": "https://github.com/TangoCh4rlie/Portfolio-Three",
+    "tech": ["React", "TypeScript", "ThreeJs", "Tailwindcss", "CloudFlare"],
+    "tags": ["Perso", "Ecole"],
+    "date": "2025"
+  },
+  {
+    "title": "Boilerbase",
+    "description": "Réalisation d'une plateforme en ligne ayant pour but d'être une marketplace ou seraient référencées le plus de boilerplates de projets informatiques dans différents languages.",
+    "img": {
+      "path": "/img/portfolio.webp"
+    },
+    "link": "https://portfolio.elouanreymond.com",
+    "repo": "https://github.com/TangoCh4rlie/Boilerbase",
+    "tech": [
+      "CloudFlare",
+      "Vue",
+      "TypeScript",
+      "Tailwindcss",
+      "NestJs",
+      "PostgreSQL"
+    ],
+    "tags": ["Perso", "Ecole"],
+    "date": "2025"
+  },
+  {
+    "title": "Portfolio v1",
     "description": "J'ai réalisé ce portfolio avec un framework que je ne connaissais pas pour découvrir de nouvelles choses. J'ai utilisé Nuxt ainsi que sa librairie de composant NuxtUI avec Tailwindcss pour le style graphique.",
     "img": {
       "path": "/img/portfolio.webp"
     },
     "link": "https://portfolio-elouan-reymond.vercel.app",
     "repo": "https://github.com/TangoCh4rlie/PortfolioNuxt",
-    "tech": ["Vue", "NuxtJs", "TypeScript", "Tailwindcss"],
+    "tech": ["Vue", "NuxtJs", "TypeScript", "Tailwindcss", "Vercel"],
     "tags": ["Perso", "Ecole"],
     "date": "2024"
   },

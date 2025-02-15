@@ -1,5 +1,7 @@
-import React from "react";
-
-export default function () {
-  return <div></div>;
+export default function ExperienceComponent() {
+  return (
+    <div>
+      <h2 className="text-2xl mb-4">Expériences</h2>
+    </div>
+  );
 }

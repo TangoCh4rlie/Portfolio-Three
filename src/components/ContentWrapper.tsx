@@ -7,6 +7,8 @@ import { MeComponent } from "./MeComponent";
 import { TechnoComponent } from "./TechnoComponent";
 import { HelpComponent } from "./HelpComponent";
 import { ProjectsComponent } from "./ProjectsComponent";
+import ExperienceComponent from "./ExperienceComponent";
+import EntreprenariatComponent from "./EntreprenariatComponent";
 
 export const ContentComponent = () => {
   const targetCtx = useContext(TargetContext);
@@ -40,12 +42,29 @@ export const ContentComponent = () => {
             </PopUpComponent>
           );
         case 3:
-          return <PopUpComponent>Modal 3</PopUpComponent>;
+          return (
+            <PopUpComponent>
+              <ExperienceComponent />
+            </PopUpComponent>
+          );
         case 4:
-          return <PopUpComponent>Modal 4</PopUpComponent>;
+          return (
+            <PopUpComponent>
+              <EntreprenariatComponent />
+            </PopUpComponent>
+          );
+        case 5:
+          return (
+            <PopUpComponent>
+              <ExperienceComponent />
+            </PopUpComponent>
+          );
         case 7:
-          return <PopUpComponent><ContentComponent /></PopUpComponent>;
-
+          return (
+            <PopUpComponent>
+              <ContentComponent />
+            </PopUpComponent>
+          );
         default:
           return null;
       }

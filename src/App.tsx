@@ -12,10 +12,9 @@ import * as THREE from "three";
 function App() {
   const targetCtx = useContext(TargetContext);
 
-  // todo: finir les secitons par Planetes
-  // TODO: faire un gros zoom quand on arrive sur la fenetre
-  // TODO: effet de zoom plus trasition de cam quand planete cliqué
   // TODO: faire le site en anglais
+  // TODO: finir les secitons par Planetes
+  // TODO: effet de zoom plus trasition de cam quand planete cliqué
   // TODO: changer les keybind en fonction de l'appareil
 
   // TODO: 0 = moi
@@ -27,6 +26,8 @@ function App() {
   // TODO: 6 = blog
   // TODO: 7 = contact
   // TODO: 8 = a venir
+
+  // TODO: changer les icons avec la librairie devicons
 
   return (
     <div className="relative h-screen">
