@@ -3,7 +3,7 @@
     "title": "Portfolio v2",
     "description": "Evolution de mon portfolio avec les librairies react et three.js. Fortement inspiré de l'esprit d'Outer Wild pour le choix des assets et de l'ambiance. J'espère qu'il vous plait :)",
     "img": {
-      "path": "/img/portfolio.webp"
+      "path": "/img/portfolio_v2.webp"
     },
     "link": "https://portfolio.elouanreymond.com",
     "repo": "https://github.com/TangoCh4rlie/Portfolio-Three",
@@ -15,7 +15,7 @@
     "title": "Boilerbase",
     "description": "Réalisation d'une plateforme en ligne ayant pour but d'être une marketplace ou seraient référencées le plus de boilerplates de projets informatiques dans différents languages.",
     "img": {
-      "path": "/img/portfolio.webp"
+      "path": "/img/boilerbase.webp"
     },
     "link": "https://portfolio.elouanreymond.com",
     "repo": "https://github.com/TangoCh4rlie/Boilerbase",
@@ -29,6 +29,30 @@
     ],
     "tags": ["Perso", "Ecole"],
     "date": "2025"
+  },
+  {
+    "title": "Blue Sky Follow Scrapper",
+    "description": "Projet permettant de récupérer les tous les utilisateurs de BlueSky. Le but étant d'avoir une représentation sous la la forme d'un graph pour pouvoir le manipuler facilement avec des outils comme Gephi.",
+    "img": {
+      "path": "/img/bsky_finder.webp"
+    },
+    "repo": "https://github.com/TangoCh4rlie/BlueSky-Follows-Scrapper-Archi",
+    "tech": ["TypeScript", "Docker", "Python"],
+    "tags": ["Perso", "Ecole"],
+    "date": "2025",
+    "misc": true
+  },
+  {
+    "title": "Bot Discord",
+    "description": "Realisation d'un bot discord ayant pour but de pouvoir ajouter des issues à un projet GitHub en quelques commandes. Initialement créer pour le projet Serrata",
+    "img": {
+      "path": "/img/serrata.webp"
+    },
+    "repo": "https://github.com/SerrataApp/DiscordBot",
+    "tech": ["JavaScript", "Docker", "Kubernetes"],
+    "tags": ["Perso", "Ecole"],
+    "date": "2025",
+    "misc": true
   },
   {
     "title": "Portfolio v1",

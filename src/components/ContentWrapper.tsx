@@ -10,6 +10,7 @@ import { ProjectsComponent } from "./ProjectsComponent";
 import ExperienceComponent from "./ExperienceComponent";
 import EntreprenariatComponent from "./EntreprenariatComponent";
 import ContactComponent from "./ContactComponent";
+import BlogComponent from "./BlogComponent";
 
 export const ContentComponent = () => {
   const targetCtx = useContext(TargetContext);
@@ -39,7 +40,7 @@ export const ContentComponent = () => {
         case 2:
           return (
             <PopUpComponent>
-              <ProjectsComponent />
+              <ProjectsComponent name="Projets" />
             </PopUpComponent>
           );
         case 3:
@@ -57,13 +58,13 @@ export const ContentComponent = () => {
         case 5:
           return (
             <PopUpComponent>
-              <ExperienceComponent />
+              <ProjectsComponent name="Misc" misc={true} />
             </PopUpComponent>
           );
         case 6:
           return (
             <PopUpComponent>
-              <ExperienceComponent />
+              <BlogComponent />
             </PopUpComponent>
           );
 
@@ -73,6 +74,8 @@ export const ContentComponent = () => {
               <ContactComponent />
             </PopUpComponent>
           );
+        case 8:
+          return <PopUpComponent>Work In Progress ;)</PopUpComponent>;
         default:
           return null;
       }

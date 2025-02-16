@@ -28,7 +28,7 @@ export default function Stars({ count = 500 }) {
           itemSize={3}
         />
       </bufferGeometry>
-      <pointsMaterial size={0.5} sizeAttenuation color="white" fog={false} />
+      <pointsMaterial size={1} sizeAttenuation color="white" fog={false} />
     </points>
   );
 }

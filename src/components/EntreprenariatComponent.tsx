@@ -28,7 +28,7 @@ export default function EntreprenariatComponent() {
         shadowColor="#c381b5"
         className="experience-card"
       >
-        <h3>sandrasanseverino.com</h3>
+        <h3>Sandra Sanseverino</h3>
         <p>
           Je développe actuellement le portfolio de Sandra Sanseverino, une
           <span className="text-lime-600"> artiste peintre </span> dans le but

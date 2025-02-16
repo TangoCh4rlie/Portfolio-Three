@@ -10,4 +10,5 @@ export interface Project {
   tags: string[];
   date: string;
   competence?: boolean;
+  misc?: boolean;
 }
