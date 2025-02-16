@@ -5,7 +5,7 @@
     "img": {
       "path": "/img/portfolio_v2.webp"
     },
-    "link": "https://portfolio.elouanreymond.com",
+    "link": "https://elouanreymond.com",
     "repo": "https://github.com/TangoCh4rlie/Portfolio-Three",
     "tech": ["React", "TypeScript", "ThreeJs", "Tailwindcss", "CloudFlare"],
     "tags": ["Perso", "Ecole"],
@@ -17,7 +17,7 @@
     "img": {
       "path": "/img/boilerbase.webp"
     },
-    "link": "https://portfolio.elouanreymond.com",
+    "link": "https://boilerbase.elouanreymond.com",
     "repo": "https://github.com/TangoCh4rlie/Boilerbase",
     "tech": [
       "CloudFlare",
@@ -60,7 +60,7 @@
     "img": {
       "path": "/img/portfolio.webp"
     },
-    "link": "https://portfolio-elouan-reymond.vercel.app",
+    "link": "https://portfolio-v1.elouanreymond.com",
     "repo": "https://github.com/TangoCh4rlie/PortfolioNuxt",
     "tech": ["Vue", "NuxtJs", "TypeScript", "Tailwindcss", "Vercel"],
     "tags": ["Perso", "Ecole"],
