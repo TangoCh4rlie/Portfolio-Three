@@ -16,7 +16,7 @@ export const MeComponent = () => {
         <span className="text-blue-700">open source</span>, je suis toujours à
         la recherche de nouveaux projets à réaliser. N'ayant pas de langage
         favori à proprement parlé, j'adore m'essayer à de nouvelles techno pour{" "}
-        <span className="text-blue-700">découvrir</span> de nouvelles technos.
+        <span className="text-blue-700">découvrir</span> de nouvelles choses.
         J'ai d'ailleurs utilisé pour l'occasion de ce portfolio la librairie
         Three.js pour la première fois.
         <br />
