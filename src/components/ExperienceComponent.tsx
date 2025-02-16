@@ -60,17 +60,7 @@ export default function ExperienceComponent() {
           </span>
           . Les données étaient visualisées avec Kibana.
         </p>
-        <div>
-          {stageTechnos.map((t) => {
-            // TODO: Si utilisation de devicon remplacer ca
-            const { img } = technos.find((techno) => techno.name === t) || {};
-            return (
-              <svg className="w-8" key={t} viewBox="0 0 128 128">
-                <path fill={img?.fill} d={img?.d} />
-              </svg>
-            );
-          })}
-        </div>
+        <div>{svgTechno(stageTechnos)}</div>
         <h4>Alternance 2024 - 2025</h4>
         <p>
           J'effectue actuellement de la maintenance applicative ainsi que du

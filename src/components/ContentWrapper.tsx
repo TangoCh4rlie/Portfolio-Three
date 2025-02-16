@@ -9,6 +9,7 @@ import { HelpComponent } from "./HelpComponent";
 import { ProjectsComponent } from "./ProjectsComponent";
 import ExperienceComponent from "./ExperienceComponent";
 import EntreprenariatComponent from "./EntreprenariatComponent";
+import ContactComponent from "./ContactComponent";
 
 export const ContentComponent = () => {
   const targetCtx = useContext(TargetContext);
@@ -59,10 +60,17 @@ export const ContentComponent = () => {
               <ExperienceComponent />
             </PopUpComponent>
           );
+        case 6:
+          return (
+            <PopUpComponent>
+              <ExperienceComponent />
+            </PopUpComponent>
+          );
+
         case 7:
           return (
             <PopUpComponent>
-              <ContentComponent />
+              <ContactComponent />
             </PopUpComponent>
           );
         default:
