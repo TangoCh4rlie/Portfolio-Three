@@ -6,17 +6,15 @@ import TargetProvider from "./utils/TargetProvider.tsx";
 import ModalProvider from "./utils/ModalProvider.tsx";
 
 import { PostHogProvider } from "posthog-js/react";
+import posthog from "posthog-js";
 
-const options = {
-  api_host: import.meta.env.REACT_APP_PUBLIC_POSTHOG_HOST,
-};
+posthog.init(import.meta.env.VITE_PUBLIC_POSTHOG_KEY, {
+  api_host: import.meta.env.VITE_PUBLIC_POSTHOG_HOST,
+});
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <PostHogProvider
-      apiKey={import.meta.env.VITE_PUBLIC_POSTHOG_KEY}
-      options={options}
-    >
+    <PostHogProvider client={posthog}>
       <TargetProvider>
         <ModalProvider>
           <App />
