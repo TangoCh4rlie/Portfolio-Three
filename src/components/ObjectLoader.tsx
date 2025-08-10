@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useContext, useEffect, useMemo } from "react";
 import planetJson from "../assets/json/planet.json";
 import { PlanetJson } from "../models/planet";
 import { useLoader } from "@react-three/fiber";
@@ -6,15 +6,20 @@ import { MTLLoader, OBJLoader } from "three-stdlib";
 import * as THREE from "three";
 import { PlanetOrbit } from "./PlanetOrbit";
 import Sun from "./Sun";
+import PlanetObjectsContext from "../utils/PlanetObjectsContext";
 
 export const ObjectLoader = () => {
   const planets: PlanetJson[] = planetJson;
   const sunDefinition: PlanetJson = planets.find((p) => p.name === "Sun")!;
+  const { setPlanetObjects } = useContext(PlanetObjectsContext);
 
   const mtlLoader = MTLLoader;
   const mtlPaths = planets.map((p) => p.mtlPath);
 
-  const mapTexture: Map<string, THREE.Group> = new Map<string, THREE.Group>();
+  const mapTexture: Map<string, THREE.Group> = useMemo(
+    () => new Map<string, THREE.Group>(),
+    [],
+  );
   const objLoader = OBJLoader;
 
   const [mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, sun] =
@@ -73,6 +78,26 @@ export const ObjectLoader = () => {
     loader.setMaterials(sun);
   });
   mapTexture.set("Sun", sunObj);
+
+  // Update the context with loaded objects once all are loaded
+  useEffect(() => {
+    if (mapTexture.size === planets.length) {
+      setPlanetObjects(new Map(mapTexture));
+    }
+  }, [
+    mercuryObj,
+    venusObj,
+    earthObj,
+    marsObj,
+    jupiterObj,
+    saturnObj,
+    uranusObj,
+    neptuneObj,
+    sunObj,
+    setPlanetObjects,
+    planets.length,
+    mapTexture,
+  ]);
 
   return (
     <>

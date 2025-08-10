@@ -2,15 +2,18 @@ import { useContext } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import TargetContext from "./utils/TargetContext";
+import PlanetObjectsContext from "./utils/PlanetObjectsContext";
 import SetInitialCameraPosition from "./components/CameraInit";
 import { ContentComponent } from "./components/ContentWrapper";
 import { ObjectLoader } from "./components/ObjectLoader";
 import Stars from "./components/Stars";
 import HelpButton from "./components/HelpButton";
+import PlanetMenu from "./components/PlanetMenu";
 import * as THREE from "three";
 
 function App() {
   const targetCtx = useContext(TargetContext);
+  const { planetObjects } = useContext(PlanetObjectsContext);
 
   // TODO: faire le site en anglais
   // TODO: finir les secitons par Planetes
@@ -34,6 +37,7 @@ function App() {
       <>
         <ContentComponent />
         <HelpButton />
+        <PlanetMenu planetObjects={planetObjects} />
         <Canvas
           className="relative z-1 h-screen"
           gl={{

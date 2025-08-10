@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App.tsx";
 import TargetProvider from "./utils/TargetProvider.tsx";
 import ModalProvider from "./utils/ModalProvider.tsx";
+import PlanetObjectsProvider from "./utils/PlanetObjectsProvider.tsx";
 
 import { PostHogProvider } from "posthog-js/react";
 import posthog from "posthog-js";
@@ -17,7 +18,9 @@ createRoot(document.getElementById("root")!).render(
     <PostHogProvider client={posthog}>
       <TargetProvider>
         <ModalProvider>
-          <App />
+          <PlanetObjectsProvider>
+            <App />
+          </PlanetObjectsProvider>
         </ModalProvider>
       </TargetProvider>
     </PostHogProvider>
