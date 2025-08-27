@@ -99,10 +99,28 @@
   },
 
   {
+    "title": "SAE ERP semestre 5 et 6",
+    "description": "Projets réalisés durant la 3ème année, le but étant de mener un projet de A à Z puis sur le deuxième semetre de reprendre les projets d'autres groupe pour faire des évolutions sur ces derniers.",
+    "img": {
+      "path": "/img/competences/erp.webp"
+    },
+    "tech": [
+      "Spring Boot",
+      "Angular",
+      "React",
+      "Express",
+      "PostgreSQL",
+      "GitLab"
+    ],
+    "tags": ["Conduire", "Réaliser", "Collaborer"],
+    "date": "2025",
+    "competence": true
+  },
+  {
     "title": "Projet SAE Peninsule",
     "description": "Projet réalisé à l'occasion de la réalisation d'un projet de groupe à l'IUT permettant mener un projet de A à Z.",
     "img": {
-      "path": "/img/projects/peninsule.png"
+      "path": "/img/competences/peninsule.webp"
     },
     "tech": ["JavaScript", "Svelte", "SqLite", "Vercel"],
     "tags": ["Conduire", "Réaliser", "Collaborer"],
@@ -113,7 +131,7 @@
     "title": "Projet SAE Annuaire",
     "description": "Réalisation d'un programme en C permettant la gestion d'un annuaire à partir d'un fichier CSV contenant des contacts.",
     "img": {
-      "path": "/img/projects/annuaire.jpg"
+      "path": "/img/competences/annuaire.webp"
     },
     "tech": ["C"],
     "tags": ["Réaliser", "Optimiser", "Administrer", "Gérer", "Collaborer"],
@@ -124,7 +142,7 @@
     "title": "Projet SAE Parcours de graphe",
     "description": "Ce projet mêlait maths et Java, le but était de faire une application permettant de visualiser et de parcourir un graphe.",
     "img": {
-      "path": "/img/projects/graph.jpg"
+      "path": "/img/competences/graph.webp"
     },
     "tech": ["Java"],
     "tags": ["Optimiser", "Réaliser", "Collaborer"],
@@ -135,7 +153,7 @@
     "title": "Projet SAE Kebab",
     "description": "Application réalisé en équipe d'un site web static en HTML CSS pour le S1.",
     "img": {
-      "path": "/img/projects/kebab_croped.png"
+      "path": "/img/competences/kebab_croped.webp"
     },
     "tech": ["Htlm", "Css", "JavaScript"],
     "tags": ["Optimiser", "Réaliser", "Collaborer"],
@@ -146,7 +164,7 @@
     "title": "SupersymPanier",
     "description": "Projet PHP permettant de faire des listes de courses en ligne.",
     "img": {
-      "path": "/img/projects/panier.png"
+      "path": "/img/competences/panier.webp"
     },
     "tech": ["Php", "Symfony", "Docker"],
     "tags": ["Optimiser", "Réaliser", "Collaborer"],

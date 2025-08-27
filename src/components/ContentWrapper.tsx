@@ -11,6 +11,7 @@ import ExperienceComponent from "./ExperienceComponent";
 import EntreprenariatComponent from "./EntreprenariatComponent";
 import ContactComponent from "./ContactComponent";
 import BlogComponent from "./BlogComponent";
+import Competences from "./Competences";
 
 export const ContentComponent = () => {
   const targetCtx = useContext(TargetContext);
@@ -75,7 +76,14 @@ export const ContentComponent = () => {
             </PopUpComponent>
           );
         case 8:
-          return <PopUpComponent>Work In Progress ;)</PopUpComponent>;
+          return (
+            <PopUpComponent>
+              <div className="flex flex-col gap-6">
+                <ProjectsComponent name="Projets SAE" competence={true} />
+                <Competences />
+              </div>
+            </PopUpComponent>
+          );
         default:
           return null;
       }

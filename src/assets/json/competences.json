@@ -1,0 +1,14 @@
+[
+  {
+    "competence": "Réaliser",
+    "description": "Je sais développer des solutions informatiques pour des clients, en respectant leurs besoins, en appliquant des principes algorithmiques, et en veillant à la qualité et à la documentation du code, dans le cadre de projets de groupe universitaires (SAE)."
+  },
+  {
+    "competence": "Optimiser",
+    "description": "Je sais proposer des applications informatiques optimisées en fonction du temps d’exécution, de la précision et de la consommation de ressources, en modélisant des situations complexes, en utilisant des algorithmes usuels, et en justifiant les choix et les résultats"
+  },
+  {
+    "competence": "Collaborer",
+    "description": "Je sais travailler efficacement au sein d'une équipe informatique, en accompagnant les évolutions, respectant les contraintes juridiques, et en favorisant une communication collaborative."
+  }
+]
